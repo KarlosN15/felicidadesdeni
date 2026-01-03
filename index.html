@@ -235,10 +235,11 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
-            filter: brightness(0.9);
+            background: rgba(15, 32, 39, 0.8);
         }
 
         .photo.active {
@@ -403,15 +404,15 @@
         // AQUÍ AGREGAS LAS RUTAS DE TUS 10 FOTOS
         // ========================================
         const photos = [
-            'foto1.jpeg',
-            'foto2.jpeg',
-            'foto3.jpeg',
-            'foto4.jpeg',
-            'foto5.jpeg',
-            'foto6.jpeg',
-            'foto7.jpeg',
-            'foto8.jpeg',
-            'foto9.jpeg',
+            'foto1.jpg',
+            'foto2.jpg',
+            'foto3.jpg',
+            'foto4.jpg',
+            'foto5.jpg',
+            'foto6.jpg',
+            'foto7.jpg',
+            'foto8.jpg',
+            'foto9.jpg',
             'foto10.jpg'
         ];
         // ========================================
