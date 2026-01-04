@@ -708,7 +708,7 @@
                     <div class="crown-icon">👑</div>
                 </div>
                 <h1>Feliz Cumpleaños</h1>
-                <p class="subtitle">Mi Reina, Mi Amor Eterno</p>
+                <p class="subtitle">Mi Negra Bella, Mi Amor Eterno</p>
             </div>
 
             <div class="divider"></div>
@@ -759,12 +759,12 @@
             'foto1.jpeg',
             'foto2.jpeg',
             'foto3.jpeg',
-            'foto4.jpg',
+            'foto4.jpeg',
             'foto5.jpeg',
-            'foto6.jpg',
+            'foto6.jpeg',
             'foto7.jpeg',
             'foto8.jpeg',
-            'foto9.jpg',
+            'foto9.jpeg',
         ];
 
         // Esperar a que cargue el DOM
@@ -870,15 +870,7 @@
             prevBtn.addEventListener('click', prevPhoto);
             nextBtn.addEventListener('click', nextPhoto);
 
-            function startAutoplay() {
-                autoplayInterval = setInterval(nextPhoto, 4000);
-            }
 
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-
-            startAutoplay();
             photoDisplay.addEventListener('mouseenter', stopAutoplay);
             photoDisplay.addEventListener('mouseleave', startAutoplay);
         }
